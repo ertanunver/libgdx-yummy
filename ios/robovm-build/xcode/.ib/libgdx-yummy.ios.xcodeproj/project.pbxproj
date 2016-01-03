@@ -1,0 +1,218 @@
+{
+	"archiveVersion" = "1";
+	"classes" =
+		{
+		};
+	"objectVersion" = "46";
+	"objects" =
+		{
+			"100000000000000000000002" =
+				{
+					"isa" = "PBXGroup";
+					"children" =
+						("0BC3403B0DFF4642A71F8BE7", "BD35497D976C40409720ABB8");
+					"sourceTree" = "<group>";
+				};
+			"100000000000000000000006" =
+				{
+					"isa" = "PBXNativeTarget";
+					"buildPhases" =
+						("100000000000000000000007");
+					"buildRules" =
+						();
+					"dependencies" =
+						();
+					"name" = "test";
+					"productName" = "test";
+					"productType" = "com.apple.product-type.application";
+				};
+			"100000000000000000000001" =
+				{
+					"isa" = "PBXProject";
+					"attributes" =
+						{
+							"LastUpgradeCheck" = "0620";
+						};
+					"buildConfigurationList" = "100000000000000000000003";
+					"compatibilityVersion" = "Xcode 3.2";
+					"developmentRegion" = "English";
+					"hasScannedForEncodings" = "0";
+					"knownRegions" =
+						("en");
+					"mainGroup" = "100000000000000000000002";
+					"projectDirPath" = "";
+					"projectRoot" = "";
+					"targets" =
+						("100000000000000000000006");
+				};
+			"100000000000000000000007" =
+				{
+					"isa" = "PBXSourcesBuildPhase";
+					"buildActionMask" = "2147483647";
+					"files" =
+						();
+					"runOnlyForDeploymentPostprocessing" = "0";
+				};
+			"100000000000000000000004" =
+				{
+					"isa" = "XCBuildConfiguration";
+					"buildSettings" =
+						{
+							"INFOPLIST_FILE" = "/Users/ertanunver/Development/projects/libgdx-yummy/ios/Info.plist.xml";
+							"SDKROOT" = "iphoneos";
+							"TARGETED_DEVICE_FAMILY" = "1,2";
+							"GCC_PRECOMPILE_PREFIX_HEADER" = "YES";
+							"GCC_PREFIX_HEADER" = "/Users/ertanunver/Development/projects/libgdx-yummy/ios/robovm-build/xcode/.ib/Prefix.pch";
+						};
+					"name" = "Debug";
+				};
+			"100000000000000000000005" =
+				{
+					"isa" = "XCBuildConfiguration";
+					"buildSettings" =
+						{
+							"INFOPLIST_FILE" = "/Users/ertanunver/Development/projects/libgdx-yummy/ios/Info.plist.xml";
+							"SDKROOT" = "iphoneos";
+							"TARGETED_DEVICE_FAMILY" = "1,2";
+							"GCC_PRECOMPILE_PREFIX_HEADER" = "YES";
+							"GCC_PREFIX_HEADER" = "/Users/ertanunver/Development/projects/libgdx-yummy/ios/robovm-build/xcode/.ib/Prefix.pch";
+						};
+					"name" = "Release";
+				};
+			"100000000000000000000003" =
+				{
+					"isa" = "XCConfigurationList";
+					"buildConfigurations" =
+						("100000000000000000000004", "100000000000000000000005");
+					"defaultConfigurationIsVisible" = "0";
+					"defaultConfigurationName" = "Release";
+				};
+			"1FFD4850A62949B5BCB7A409" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "badlogic.jpg";
+					"lastKnownFileType" = "image.jpeg";
+					"sourceTree" = "<group>";
+					"path" = "badlogic.jpg";
+				};
+			"0BC3403B0DFF4642A71F8BE7" =
+				{
+					"isa" = "PBXGroup";
+					"children" =
+						("1FFD4850A62949B5BCB7A409", "86781B7484BB48C29E966DF7", "34BBCBCC0DCA40CABF89023A",
+ "4CC7B6368EF94B0098807D8B", "80D4BB7E3D934221B46520BF", "CE9425F33513411099468092",
+ "DD4220DDC8BD4AF9AF801D80", "867DA42E2DE8494A86CACA3D", "C69E20E98D3C4BB088C64A8E",
+ "E128B1C5A5D448BAB2F47D32", "13CDA45C863A42558465D79D", "F2A25482FB8A4D588E655995"
+);
+					"name" = "Resources";
+					"sourceTree" = "<absolute>";
+					"path" = "/Users/ertanunver/Development/projects/libgdx-yummy/ios/data";
+				};
+			"86781B7484BB48C29E966DF7" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Default-375w-667h@2x.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Default-375w-667h@2x.png";
+				};
+			"34BBCBCC0DCA40CABF89023A" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Default-414w-736h@3x.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Default-414w-736h@3x.png";
+				};
+			"4CC7B6368EF94B0098807D8B" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Default-568h@2x.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Default-568h@2x.png";
+				};
+			"80D4BB7E3D934221B46520BF" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Default.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Default.png";
+				};
+			"CE9425F33513411099468092" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Default@2x.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Default@2x.png";
+				};
+			"DD4220DDC8BD4AF9AF801D80" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Default@2x~ipad.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Default@2x~ipad.png";
+				};
+			"867DA42E2DE8494A86CACA3D" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Default~ipad.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Default~ipad.png";
+				};
+			"C69E20E98D3C4BB088C64A8E" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Icon-72.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Icon-72.png";
+				};
+			"E128B1C5A5D448BAB2F47D32" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Icon-72@2x.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Icon-72@2x.png";
+				};
+			"13CDA45C863A42558465D79D" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Icon.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Icon.png";
+				};
+			"F2A25482FB8A4D588E655995" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Icon@2x.png";
+					"lastKnownFileType" = "image.png";
+					"sourceTree" = "<group>";
+					"path" = "Icon@2x.png";
+				};
+			"83CA6CFCA0BD4A50B0D80585" =
+				{
+					"isa" = "PBXFileReference";
+					"name" = "Info.plist";
+					"explicitFileType" = "text.plist.info";
+					"sourceTree" = "<group>";
+					"path" = "Info.plist.xml";
+				};
+			"BD35497D976C40409720ABB8" =
+				{
+					"isa" = "PBXGroup";
+					"children" =
+						("83CA6CFCA0BD4A50B0D80585");
+					"name" = "Supporting Files";
+					"sourceTree" = "<absolute>";
+					"path" = "/Users/ertanunver/Development/projects/libgdx-yummy/ios";
+				};
+		};
+	"rootObject" = "100000000000000000000001";
+}
