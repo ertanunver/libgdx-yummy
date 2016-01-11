@@ -51,11 +51,11 @@ public class YMAssetManager {
         }
     }
 
-    public void dispose() {
+    void dispose() {
         assetManager.dispose();
     }
 
-    public boolean update() {
+    boolean update() {
         return assetManager.update();
     }
 

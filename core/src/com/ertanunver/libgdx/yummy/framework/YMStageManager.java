@@ -31,7 +31,7 @@ public class YMStageManager {
         throw new NullPointerException("The instance of YMStageManager has not been initialized.");
     }
 
-    public void create() {
+    void create() {
         try {
             YMStage startingStage = (YMStage) Class.forName(config.get("starting_stage").getAsString()).newInstance();
             if (startingStage != null) {
@@ -44,7 +44,7 @@ public class YMStageManager {
         }
     }
 
-    public void dispose() {
+    void dispose() {
         if (!stages.isEmpty()) {
             getActiveStage().hide();
             while (!stages.isEmpty()) {
@@ -54,28 +54,28 @@ public class YMStageManager {
         }
     }
 
-    public void resume() {
+    void resume() {
         YMStage activeStage = getActiveStage();
         if (activeStage != null) {
             activeStage.resume();
         }
     }
 
-    public void pause() {
+    void pause() {
         YMStage activeStage = getActiveStage();
         if (activeStage != null) {
             activeStage.pause();
         }
     }
 
-    public void resize() {
+    void resize() {
         YMStage activeStage = getActiveStage();
         if (activeStage != null) {
             activeStage.resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         }
     }
 
-    public void render() {
+    void render() {
         YMStage activeStage = getActiveStage();
         if (activeStage != null) {
             activeStage.render();
