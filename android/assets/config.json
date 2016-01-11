@@ -1,5 +1,5 @@
 {
-  "stage_manager": {
-    "starting_stage": "package_name.class_name"
+  "stage_manager" : {
+    "starting_stage" : "com.ertanunver.libgdx.yummy.test.LoadingStage"
   }
 }

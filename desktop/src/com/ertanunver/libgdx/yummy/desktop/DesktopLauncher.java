@@ -2,7 +2,7 @@ package com.ertanunver.libgdx.yummy.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.ertanunver.libgdx.yummy.YummyGame;
+import com.ertanunver.libgdx.yummy.test.YummyGame;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {

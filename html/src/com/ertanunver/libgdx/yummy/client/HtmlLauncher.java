@@ -3,7 +3,7 @@ package com.ertanunver.libgdx.yummy.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import com.ertanunver.libgdx.yummy.YummyGame;
+import test.YummyGame;
 
 public class HtmlLauncher extends GwtApplication {
 

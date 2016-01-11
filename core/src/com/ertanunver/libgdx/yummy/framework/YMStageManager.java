@@ -22,7 +22,6 @@ public class YMStageManager {
             throw new YMConfigException("stage_manager config has not been set.");
         }
         stages = new ArrayList<YMStage>();
-        create();
     }
 
     public static YMStageManager getInstance() {
@@ -41,7 +40,7 @@ public class YMStageManager {
         } catch (NullPointerException e ) {
             throw new YMConfigException("starting_stage class has not been set.");
         } catch (Exception e) {
-            throw new YMConfigException("starting_stage class has not been found.");
+            throw new YMConfigException("starting_stage class type has not been found.");
         }
     }
 

@@ -29,10 +29,14 @@ public class YMGame implements ApplicationListener {
     public void create() {
         config = loadConfig();
         YMStageManager.instance = new YMStageManager(config);
+        YMStageManager.getInstance().create();
+        YMAssetManager.instance = new YMAssetManager(config);
+        YMAssetManager.getInstance().create();
     }
 
     @Override
     public void dispose() {
+        YMStageManager.getInstance().dispose();
         YMStageManager.getInstance().dispose();
     }
 
