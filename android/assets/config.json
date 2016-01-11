@@ -1,5 +1,5 @@
 {
   "stage_manager": {
-    "starting_stage": "test.stages.LoadingStage"
+    "starting_stage": "package_name.class_name"
   }
 }
