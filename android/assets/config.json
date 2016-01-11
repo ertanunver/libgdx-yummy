@@ -1,5 +1,19 @@
 {
   "stage_manager" : {
     "starting_stage" : "com.ertanunver.libgdx.yummy.test.LoadingStage"
+  },
+  "asset_manager" : {
+    "assets" : [
+      {
+        "type" : "com.badlogic.gdx.graphics.Texture",
+        "paths" : [
+          "sprites/01.jpg",
+          "sprites/02.jpg",
+          "sprites/03.jpg",
+          "sprites/04.jpg",
+          "sprites/05.jpg"
+        ]
+      }
+    ]
   }
 }

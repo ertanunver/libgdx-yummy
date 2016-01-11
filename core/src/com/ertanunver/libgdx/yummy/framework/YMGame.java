@@ -37,7 +37,7 @@ public class YMGame implements ApplicationListener {
     @Override
     public void dispose() {
         YMStageManager.getInstance().dispose();
-        YMStageManager.getInstance().dispose();
+        YMAssetManager.getInstance().dispose();
     }
 
     @Override
