@@ -2,8 +2,6 @@ package com.ertanunver.libgdx.yummy.framework;
 
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
-import com.ertanunver.libgdx.yummy.framework.YMSkinManager;
-import com.ertanunver.libgdx.yummy.framework.YMStage;
 
 /**
  * Created by ertanunver on 11/01/16.

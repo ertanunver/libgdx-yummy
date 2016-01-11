@@ -5,8 +5,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-import java.util.ArrayList;
-
 /**
  * Created by ertanunver on 10/01/16.
  */

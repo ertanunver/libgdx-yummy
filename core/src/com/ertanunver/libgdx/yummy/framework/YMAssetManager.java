@@ -4,8 +4,6 @@ import com.badlogic.gdx.assets.AssetManager;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-import java.util.ArrayList;
-
 /**
  * Created by ertanunver on 10/01/16.
  */
@@ -55,7 +53,7 @@ public class YMAssetManager {
         assetManager.dispose();
     }
 
-    boolean update() {
+    public boolean update() {
         return assetManager.update();
     }
 
