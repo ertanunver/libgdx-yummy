@@ -32,12 +32,15 @@ public class YMGame implements ApplicationListener {
         YMStageManager.getInstance().create();
         YMAssetManager.instance = new YMAssetManager(config);
         YMAssetManager.getInstance().create();
+        YMSkinManager.instance = new YMSkinManager(config);
+        YMSkinManager.getInstance().create();
     }
 
     @Override
     public void dispose() {
         YMStageManager.getInstance().dispose();
         YMAssetManager.getInstance().dispose();
+        YMSkinManager.getInstance().dispose();
     }
 
     @Override

@@ -15,5 +15,10 @@
         ]
       }
     ]
+  },
+  "skin_manager" : {
+      "skins": [
+        "skins/default/uiskin.json"
+      ]
   }
 }
