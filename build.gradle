@@ -39,6 +39,7 @@ project(":core") {
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.google.code.gson:gson:2.4"
+        compile "com.esotericsoftware:kryonet:2.22.0-RC1"
     }
 }
 
