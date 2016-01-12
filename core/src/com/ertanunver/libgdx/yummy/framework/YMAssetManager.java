@@ -31,7 +31,7 @@ public class YMAssetManager {
         throw new NullPointerException("The instance of YMAssetManager has not been initialized.");
     }
 
-    public void create() {
+    void create() {
         try {
             JsonArray assets = config.get("assets").getAsJsonArray();
             for (int i = 0; i < assets.size(); i++) {
