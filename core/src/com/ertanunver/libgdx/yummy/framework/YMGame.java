@@ -28,12 +28,12 @@ public class YMGame implements ApplicationListener {
     @Override
     public void create() {
         config = loadConfig();
-        YMStageManager.instance = new YMStageManager(config);
-        YMStageManager.getInstance().create();
-        YMAssetManager.instance = new YMAssetManager(config);
-        YMAssetManager.getInstance().create();
-        YMSkinManager.instance = new YMSkinManager(config);
-        YMSkinManager.getInstance().create();
+        YMStageManager stageManager = new YMStageManager(config);
+        stageManager.create();
+        YMAssetManager assetManager = new YMAssetManager(config);
+        assetManager.create();
+        YMSkinManager skinManager = new YMSkinManager(config);
+        skinManager.create();
     }
 
     @Override

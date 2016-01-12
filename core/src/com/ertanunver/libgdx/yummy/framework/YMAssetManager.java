@@ -17,10 +17,11 @@ public class YMAssetManager {
     YMAssetManager(JsonObject config) {
         try {
             this.config = config.get("asset_manager").getAsJsonObject();
-            assetManager = new AssetManager();
+            instance = this;
         } catch (NullPointerException e) {
             throw new YMConfigException("asset_manager config has not been set.");
         }
+        assetManager = new AssetManager();
     }
 
     public static YMAssetManager getInstance() {

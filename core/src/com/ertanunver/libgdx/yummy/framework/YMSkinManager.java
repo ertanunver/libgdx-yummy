@@ -18,6 +18,7 @@ public class YMSkinManager {
     YMSkinManager(JsonObject config) {
         try {
             this.config = config.get("skin_manager").getAsJsonObject();
+            instance = this;
         } catch (NullPointerException e) {
             throw new YMConfigException("skin_manager config has not been set.");
         }
