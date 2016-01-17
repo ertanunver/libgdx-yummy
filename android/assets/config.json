@@ -1,6 +1,6 @@
 {
   "stage_manager" : {
-    "starting_stage" : "com.ertanunver.libgdx.yummy.test.LoadingStage"
+    "starting_stage" : "com.ertanunver.libgdx.yummy.test.assetmanager.AssetManagerTestStage"
   },
   "asset_manager" : {
     "assets" : [
@@ -11,14 +11,20 @@
           "sprites/02.jpg",
           "sprites/03.jpg",
           "sprites/04.jpg",
-          "sprites/05.jpg"
+          "sprites/05.jpg",
+          "sprites/luigi.png",
+          "sprites/mario.png"
         ]
       }
     ]
   },
   "skin_manager" : {
-      "skins": [
-        "skins/default/uiskin.json"
-      ]
+    "skins" : [
+      "skins/default/uiskin.json"
+    ]
+  },
+  "client_manager" : {
+    "host" : "localhost",
+    "port" : "1903"
   }
 }
