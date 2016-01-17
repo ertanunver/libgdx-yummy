@@ -15,9 +15,9 @@ public class YMAssetManager {
     private AssetManager assetManager;
 
     YMAssetManager(JsonObject config) {
+        instance = this;
         try {
             this.config = config.get("asset_manager").getAsJsonObject();
-            instance = this;
         } catch (NullPointerException e) {
             throw new YMConfigException("asset_manager config has not been set.");
         }
@@ -56,6 +56,14 @@ public class YMAssetManager {
 
     public boolean update() {
         return assetManager.update();
+    }
+
+    public float getProcess() {
+        return assetManager.getProgress();
+    }
+
+    public synchronized <T> T get (String fileName, Class<T> type) {
+        return assetManager.get(fileName, type);
     }
 
 }
