@@ -16,9 +16,9 @@ public class YMStageManager {
     private ArrayList<YMStage> stages;
 
     YMStageManager(JsonObject config) {
+        instance = this;
         try {
             this.config = config.get("stage_manager").getAsJsonObject();
-            instance = this;
         } catch (NullPointerException e) {
             throw new YMConfigException("stage_manager config has not been set.");
         }

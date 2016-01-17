@@ -14,6 +14,11 @@ public class YMGame implements ApplicationListener {
 
     private JsonObject config;
 
+    private YMAssetManager assetManager;
+    private YMClientManager clientManager;
+    private YMSkinManager skinManager;
+    private YMStageManager stageManager;
+
     private JsonObject loadConfig() {
         try {
             JsonObject jsonObject = new Gson().fromJson(Gdx.files.local("config.json").readString("UTF-8"), JsonObject.class);
@@ -28,19 +33,23 @@ public class YMGame implements ApplicationListener {
     @Override
     public void create() {
         config = loadConfig();
-        YMStageManager stageManager = new YMStageManager(config);
-        stageManager.create();
-        YMAssetManager assetManager = new YMAssetManager(config);
+        assetManager = new YMAssetManager(config);
         assetManager.create();
-        YMSkinManager skinManager = new YMSkinManager(config);
+        clientManager = new YMClientManager(config);
+        clientManager.create();
+        skinManager = new YMSkinManager(config);
         skinManager.create();
+        stageManager = new YMStageManager(config);
+        stageManager.create();
+
     }
 
     @Override
     public void dispose() {
-        YMStageManager.getInstance().dispose();
-        YMAssetManager.getInstance().dispose();
-        YMSkinManager.getInstance().dispose();
+        stageManager.dispose();
+        skinManager.dispose();
+        clientManager.dispose();
+        assetManager.dispose();
     }
 
     @Override
