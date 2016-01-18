@@ -40,6 +40,8 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.google.code.gson:gson:2.4"
         compile "com.esotericsoftware:kryonet:2.22.0-RC1"
+        compile "com.squareup.retrofit2:retrofit:2.0.0-beta3"
+        compile "com.squareup.retrofit2:converter-gson:2.0.0-beta3"
     }
 }
 

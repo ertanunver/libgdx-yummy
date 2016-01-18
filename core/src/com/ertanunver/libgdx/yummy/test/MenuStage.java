@@ -1,21 +1,19 @@
 package com.ertanunver.libgdx.yummy.test;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
-import com.badlogic.gdx.utils.viewport.Viewport;
 import com.ertanunver.libgdx.yummy.framework.YMSkinManager;
 import com.ertanunver.libgdx.yummy.framework.YMStage;
 import com.ertanunver.libgdx.yummy.framework.YMStageManager;
-import com.ertanunver.libgdx.yummy.test.assetmanager.AssetManagerTestStage;
 import com.ertanunver.libgdx.yummy.test.clientmanager.ClientManagerTestStage;
 import com.ertanunver.libgdx.yummy.test.skinmanager.SkinManagerTestStage;
 import com.ertanunver.libgdx.yummy.test.stagemanager.StageManagerTestStage;
+import com.ertanunver.libgdx.yummy.test.webservicemanager.WebServiceManagerTestStage;
 
 /**
  * Created by ertanunver on 14/01/16.
@@ -28,6 +26,7 @@ public class MenuStage extends YMStage {
     private TextButton vClientManager;
     private TextButton vSkinManager;
     private TextButton vStageManager;
+    private TextButton vWebServiceManager;
 
     public MenuStage() {
         super(new ScreenViewport());
@@ -46,13 +45,16 @@ public class MenuStage extends YMStage {
         // buttons
         vTable.row();
         vClientManager = new TextButton("Client Manager", skin);
-        vTable.add(vClientManager).pad(10, 0, 10, 0).size(150, 40).align(Align.center);
+        vTable.add(vClientManager).pad(10, 0, 10, 0).size(200, 40).align(Align.center);
         vTable.row();
         vSkinManager = new TextButton("Skin Manager", skin);
-        vTable.add(vSkinManager).pad(10, 0, 10, 0).size(150, 40).align(Align.center);
+        vTable.add(vSkinManager).pad(10, 0, 10, 0).size(200, 40).align(Align.center);
         vTable.row();
         vStageManager = new TextButton("Stage Manager", skin);
-        vTable.add(vStageManager).pad(10, 0, 10, 0).size(150, 40).align(Align.center);
+        vTable.add(vStageManager).pad(10, 0, 10, 0).size(200, 40).align(Align.center);
+        vTable.row();
+        vWebServiceManager = new TextButton("Web Service Manager", skin);
+        vTable.add(vWebServiceManager).pad(10, 0, 10, 0).size(200, 40).align(Align.center);
         // button click listeners
         vClientManager.addListener(new ClickListener() {
             @Override
@@ -70,6 +72,12 @@ public class MenuStage extends YMStage {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 YMStageManager.getInstance().pushStage(new StageManagerTestStage());
+            }
+        });
+        vWebServiceManager.addListener(new ClickListener() {
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                YMStageManager.getInstance().pushStage(new WebServiceManagerTestStage());
             }
         });
     }

@@ -26,5 +26,8 @@
   "client_manager" : {
     "host" : "localhost",
     "port" : "1903"
+  },
+  "web_service_manager" : {
+    "base_url" : "https://api.github.com"
   }
 }

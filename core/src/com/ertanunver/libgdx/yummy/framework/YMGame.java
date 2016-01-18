@@ -15,6 +15,7 @@ public class YMGame implements ApplicationListener {
     private JsonObject config;
 
     private YMAssetManager assetManager;
+    private YMWebServiceManager webServiceManager;
     private YMClientManager clientManager;
     private YMSkinManager skinManager;
     private YMStageManager stageManager;
@@ -35,6 +36,8 @@ public class YMGame implements ApplicationListener {
         config = loadConfig();
         assetManager = new YMAssetManager(config);
         assetManager.create();
+        webServiceManager = new YMWebServiceManager(config);
+        webServiceManager.create();
         clientManager = new YMClientManager(config);
         clientManager.create();
         skinManager = new YMSkinManager(config);
@@ -49,6 +52,7 @@ public class YMGame implements ApplicationListener {
         stageManager.dispose();
         skinManager.dispose();
         clientManager.dispose();
+        webServiceManager.dispose();
         assetManager.dispose();
     }
 
