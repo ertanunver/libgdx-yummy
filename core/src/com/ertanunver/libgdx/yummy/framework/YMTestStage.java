@@ -20,6 +20,10 @@ public class YMTestStage extends YMStage {
     private boolean back;
     private String message;
 
+    public YMTestStage() {
+        this("Test Stage", true);
+    }
+
     public YMTestStage(String message, boolean back) {
         super(new ScreenViewport());
         this.message = message;
