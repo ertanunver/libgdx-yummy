@@ -21,7 +21,7 @@ public class YMTestStage extends YMStage {
     private String message;
 
     public YMTestStage() {
-        this("Test Stage", true);
+        this("Test Stage", false);
     }
 
     public YMTestStage(String message, boolean back) {
