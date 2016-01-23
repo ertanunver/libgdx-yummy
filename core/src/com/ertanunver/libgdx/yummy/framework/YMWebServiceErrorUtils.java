@@ -22,7 +22,7 @@ public class YMWebServiceErrorUtils {
         }
     }
 
-    public static void displayErrors(YMStage stage, JsonObject jsonObject) {
+    public static void displayError(YMStage stage, JsonObject jsonObject) {
         JsonArray errors = jsonObject.get("errors").getAsJsonArray();
         for (int i = 0; i < errors.size(); i++) {
             Label messageLabel = new Label(errors.get(i).getAsString(), YMSkinManager.getInstance().getSkin());
