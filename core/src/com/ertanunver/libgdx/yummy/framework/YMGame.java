@@ -22,7 +22,7 @@ public class YMGame implements ApplicationListener {
 
     private JsonObject loadConfig() {
         try {
-            JsonObject jsonObject = new Gson().fromJson(Gdx.files.local("config.json").readString("UTF-8"), JsonObject.class);
+            JsonObject jsonObject = new Gson().fromJson(Gdx.files.internal("config.json").readString("UTF-8"), JsonObject.class);
             return jsonObject;
         } catch (GdxRuntimeException e) {
             throw new YMConfigException("config.json file has not been found.");
@@ -68,7 +68,9 @@ public class YMGame implements ApplicationListener {
 
     @Override
     public void resize(int width, int height) {
-        YMStageManager.getInstance().resize();
+        try {
+            YMStageManager.getInstance().resize();
+        } catch (Exception e) { }
     }
 
     @Override
