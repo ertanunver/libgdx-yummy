@@ -23,12 +23,7 @@ public class AssetManagerTestStage extends YMTestStage {
             assetManager.update();
         } else {
             vMessage.setText("Finished.");
-            new Timer().scheduleTask(new Timer.Task() {
-                @Override
-                public void run() {
-                    YMStageManager.getInstance().pushStageWithKillingActiveStage(new MenuStage());
-                }
-            }, 1);
+            YMStageManager.getInstance().pushStageWithKillingActiveStage(new MenuStage());
         }
         super.render();
     }
